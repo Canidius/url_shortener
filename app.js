@@ -7,7 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var config = require('config');
+var config = require('./config');
 
 mongoose.connect('mongodb://' + config.db.host + '/' + config.db.name);
 
