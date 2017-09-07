@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var config = require('./config');
 
-mongoose.connect('mongodb://' + config.db.host + '/' + config.db.name);
+mongoose.connect('mongodb://heroku_27pt6z84:s9s5t41b5sof8ip45mhu8dh0hb@ds127994.mlab.com:27994/heroku_27pt6z84');
 
 var app = express();
 
