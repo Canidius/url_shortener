@@ -1,5 +1,25 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .container
+    .row
+      .col
+        .form-group
+          label(for="shortUrl") Long URL
+          .input-group
+            input.form-control(type="text" name="long_url" id="longUrl")
+            span.input-group-btn
+                button.btn.btn-primary(id="shortenURL") Shorten Url
+    br
+    .row
+      .col
+        div(id="link")
+    br
+    .row
+      .col
+        .form-group
+          label(for="shortUrl") Desired short URL
+          .input-group
+            input.form-control(type="text" name="short_url" id="shortUrl")
+            span.input-group-btn
+              button.btn.btn-primary(id="shortenDesiredURL" disabled) Shorten for desired Url
