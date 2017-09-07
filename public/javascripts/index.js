@@ -29,7 +29,7 @@ $('#shortenURL').on('click', function() {
 $('#shortenDesiredURL').on('click', function() {
 
   $.ajax({
-    url: '/api/shortenDesired',
+    url: '/api/shorten_desired',
     type: 'POST',
     dataType: 'JSON',
     data: {
